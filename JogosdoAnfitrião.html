@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos do Anfitrão</title>
+
+  <style>
+    /* ===== MENU FIXO NO TOPO ===== */
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(rgb(36,4,177), #b700ff, #ff04ff);
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* sombra elegante */
+}
+
+/* container interno do menu */
+.menu-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo */
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* lista do menu */
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+/* links */
+.menu a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+/* linha animada embaixo */
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+/* hover */
+.menu a:hover::after {
+    width: 100%;
+}
+
+        h1 {
+            animation: aparecer 1.5s ease forwards;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+        }
+    .card {
+    background: linear-gradient(135deg, rgb(36,4,177), #ff04ff,#b700ff); /* degradê moderno */
+    border-radius: 15px;       /* cantos arredondados */
+    padding: 20px;             /* espaço interno */
+    margin: 20px 0;            /* espaço entre os cards */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card:hover {
+    transform: translateY(-10px);      /* sobe ao passar o mouse */
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2); /* sombra mais forte */
+}
+.card02 {
+    background: linear-gradient(135deg, rgb(36,4,177),#b700ff,#ff04ff); /* degradê moderno */
+    border-radius: 15px;       /* cantos arredondados */
+    padding: 20px;             /* espaço interno */
+    margin: 20px 0;            /* espaço entre os cards */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+    .card02:hover {
+    transform: translateY(-10px);      /* sobe ao passar o mouse */
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2); /* sombra mais forte */
+}
+    </style>
+    <style>
+    body{background-image: url(https://i.pinimg.com/736x/b6/35/90/b63590f84481919eab537f30ffa41540.jpg);
+}
+
+html { scroll-behavior: smooth; }
+
+    </style>
+  <body>
+    
+    <!--MENU-->
+    <nav class="menu">
+    <div class="menu-container">
+        <div class="logo">Jogos do Anfitrião</div>
+
+        <ul>
+            <li><a href="#Início">Início</a></li>
+            <li><a href="#Jogo">Jogo</a></li>
+            <li><a href="#Regras dos Jogos do Anfitrião">Regras</a></li>
+            <li><a href="#Roleta Caótica">Roleta Caótica</a></li>
+            <li><a href="Equipes do Jogo.html">Equipe</a></li>
+        </ul>
+    </div>
+    </nav>
+    <section class="categoria" id="Início"></section>
+    <hr>
+    <img src="https://i.ytimg.com/vi/DFZ-Ru1-4V4/maxresdefault.jpg" width="1920" height="700">
+    <hr>
+    <h1 style="color: white; background: linear-gradient(rgb(36,4,177), #ff04ff,#b700ff); text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: xx-large; color: #ffc400; text-shadow: 0 0 10px #ff3c00, 0 0 20px #ff3c00, 0 0 40px #ff3c00, 0 0 80px #ff3c00;">
+        &#127917; Jogos do Anfitrião &#127917;
+        <section class="categoria" id="Jogo"></section>
+    </h1>
+    <hr>
+
+    <h2>
+        <h1 style="color: #ff04ff; text-shadow: 0 0 10px #b700ff, 0 0 20px #b700ff, 0 0 40px #b700ff, 0 0 80px #b700ff;">
+            &bull; <em> O que é o Jogo do Anfitrião? </em>
+        </h1>
+        <h2 style="color: white;">
+        Os Jogos do Anfitrião é um jogo feito por mim inspirado no universo de Ordem Paranormal (criado por Rafael "Celbit" Lange), cujo o seu objetivo principal é divertir a todos em modos de jogo caóticos e muito aleatórios. O jogo possui um número ideal de pessoas que é 7, mas ainda pode ser jogado com menos que isso, além disso ele possui uma série de regras que vão ser exploradas a seguir: 
+        </h2>
+        <h1 style="color: red;"> <em> &bull; Ponto Importante:</em> </h1> <h2 style="color: white;"> Se não tiver dados de RPG físicos, você pode usar o simulado de dados clicando aqui: <a style="color:#ff1414; text-shadow: 0 0 10px #ff0224, 0 0 20px #ff0224, 0 0 40px #ff0224, 0 0 80px #ff0224;" href="https://dnddiceroller.org/pt" target="_blank">Dados de RPG</a></h2>
+    </h2>
+    <hr> 
+    <div class="card"> 
+        
+    <img src="Anfitrião.webp" width="1000" height="600" align="left">
+    
+    <h1 style="color: #2622ff; text-shadow: 0 0 10px #330ce4, 0 0 20px #330ce4, 0 0 40px #330ce4, 0 0 80px #330ce4;;" align="center"> 
+    <section class="categoria" id="Regras dos Jogos do Anfitrião">
+    Regras dos Jogos do Anfitrião:  
+    </h1><br>
+
+    <h2 style="color: white;" align="justify-content">
+    <strong>
+    <ul>
+        1-O jogo precisa de uma pessoa sendo o Anfitrião aquele que vai gerenciar os jogos e suas demais exigências;<br> <br>
+        2-Ao início de todo novo jogo do Anfitrião, o escolhido para gerenciar as partidas deve girar 1 dado de 12 lados para ver qual jogo da Roleta Caótica foi escolhido;<br> <br>
+        3-Roleta caótica é o nome dado aos tipos de jogos que podem ser selecionados pelo dado jogado do Anfitrão, eles têm a função de comandar como vai ser partida;<br> <br>
+        4-O Anfitrião também deve jogar 1 dado de 6 lados para descobrir qual o personagem de cada jogador;<br> <br>
+        5-Todos os personagens possuem 6 pontos de existência que representa praticamente a sua vida;<br> <br>
+        6-Ao início de cada partida nova os jogadores jogam 1 dado de 20 lados para decidir quem começa agindo e tirando 1 de existência do seu adversário.<br> 
+    </ul>
+    </strong>
+    </h2>
+    </div> 
+    <hr>
+
+    <h1 style="color: #ff04ff;text-shadow: 0 0 10px #b700ff, 0 0 20px #b700ff, 0 0 40px #b700ff, 0 0 80px #b700ff;">
+            &bull; <em> Roleta Caótica: </em>
+            <section class="categoria" id="Roleta Caótica"></section>
+    </h1>
+    <hr>
+    
+    <div class="card02">
+    <img src="https://i.pinimg.com/736x/37/2e/22/372e22878d1c63e0161614ac831ceb78.jpg" width="700" height="2100" align="left">
+    <h2 style="color: white;" align="center">
+    <strong>
+        <h1 style="color: #2622ff; text-shadow: 0 0 10px #330ce4, 0 0 20px #330ce4, 0 0 40px #330ce4, 0 0 80px #330ce4;;">1-Chuva de Raios:</h1> <p> Depois de toda rodada, uma chuva de raios vai acontecer, os jogadores devem lançar 1 dado de 20 lados (se cair de 1-10 = perdem 1 de existência / se cair de 11-20 = nada ocorre).</p>
+        <h1 style="color: #2622ff; text-shadow: 0 0 10px #330ce4, 0 0 20px #330ce4, 0 0 40px #330ce4, 0 0 80px #330ce4;">2-Dança das Máscaras:</h1> <p> No início de toda rodada, o Anfitrião vai lançar 1 dado de 6 lados para escolher quem vai ser o magistrado e se tornar livre de toda ameaça ou condição na sua rodada.</p>
+        <h1 style="color: #2622ff; text-shadow: 0 0 10px #330ce4, 0 0 20px #330ce4, 0 0 40px #330ce4, 0 0 80px #330ce4;">3-Puro Ódio:</h1> <p> O Anfitrião lança 1 dado de 6 lados e o escolhido, se também for quem tirou o maior dado pra agir, vai poder atacar o adversário causando 2 de existência.</p>
+        <h1 style="color: #2622ff; text-shadow: 0 0 10px #330ce4, 0 0 20px #330ce4, 0 0 40px #330ce4, 0 0 80px #330ce4;;">4-Manancial:</h1> <p> O Anfitrião lança 1 dado de 6 lados e o jogador escolhido, pode roubar 1 de existência de outro. Com um novo manancial surgindo durante uma nova rodada.</p>
+        <h1 style="color: #2622ff; text-shadow: 0 0 10px #330ce4, 0 0 20px #330ce4, 0 0 40px #330ce4, 0 0 80px #330ce4;">5-Afogado:</h1> <p> No fim de toda rodada, os jogadores lançam 1 dado de 20 lados (se cair de 1-10 = nada ocorre / se cair de 11-20 = perdem 1 de existência).</p>
+        <h1 style="color: #2622ff; text-shadow: 0 0 10px #330ce4, 0 0 20px #330ce4, 0 0 40px #330ce4, 0 0 80px #330ce4;">6-Game Over:</h1> <p> No início de toda rodada o Anfitrião lança 1 dado de 6 lados e o jogador escollhido morre. (OBS: se ele for escolhido por outro adversário, o mesmo que o escolheu perde o jogo)</p>
+        <h1 style="color: #2622ff; text-shadow: 0 0 10px #330ce4, 0 0 20px #330ce4, 0 0 40px #330ce4, 0 0 80px #330ce4;">7-Oceano de Energia:</h1> <p> O Anfitrião cria um tubarão de energia que no final de toda rodada escolhe alguns jogadores pra atacar e retirar 1 de existência. (para escolher os jogadores que vão ser atacados, o Anfirião vai lançar 1 lado de 6 lados)</p>
+        <h1 style="color: #2622ff; text-shadow: 0 0 10px #330ce4, 0 0 20px #330ce4, 0 0 40px #330ce4, 0 0 80px #330ce4;;">8-Areia Movediça:</h1> <p> O Anfitrião cria um círculo de areia que puxa um número de jogadores que ficam indefesos e podem ser atingidos pelo adversário da rodada. (1 dado de 6 lados deve ser jogado pelo Anfirião para saber o número de pessoas atingidas)</p>
+        <h1 style="color: #2622ff; text-shadow: 0 0 10px #330ce4, 0 0 20px #330ce4, 0 0 40px #330ce4, 0 0 80px #330ce4;">9-Floração:</h1> <p> O Anfitrião lança 1 dado de 6 lados e o escolhido recupera 1 de existência.</p>
+        <h1 style="color: #2622ff; text-shadow: 0 0 10px #330ce4, 0 0 20px #330ce4, 0 0 40px #330ce4, 0 0 80px #330ce4;">10-Armadura de Sangue:</h1> <p> O Anfitrião lança 1 dado de 6 lados e o escolhido ganha um escudo de sangue que garante a resistência de 1 de existência a dano.</p>
+        <h1 style="color: #2622ff; text-shadow: 0 0 10px #330ce4, 0 0 20px #330ce4, 0 0 40px #330ce4, 0 0 80px #330ce4;">11-Eletroestática:</h1> <p> O Anfitrião lança 1 dado de 6 lados e o escolhido fica paralizado e não pode agir.</p>
+        <h1 style="color: #2622ff; text-shadow: 0 0 10px #330ce4, 0 0 20px #330ce4, 0 0 40px #330ce4, 0 0 80px #330ce4;">12-Teatro:</h1> <p> O Anfitrião lança 2 dado de 6 lados e o primeiro define quantos vão ser afetados e o segundo vai ser jogado mais de uma vez dependendo do número de afetados do primeiro dado, depois que isso for decidido, todos devem decorar uma frase que o Anfitrião falar e se errar ou gaguejar perdem 1 de existência.</p>
+    </strong>
+    </div>
+    <hr>
+</body>
+</html>
+

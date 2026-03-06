@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipes do Jogo</title>
+</head>
+<style>
+ /* ===== MENU FIXO NO TOPO ===== */
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(rgb(36,4,177), #b700ff, #ff04ff);
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* sombra elegante */
+}
+
+/* container interno do menu */
+.menu-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo */
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* lista do menu */
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+/* links */
+.menu a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+/* linha animada embaixo */
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+/* hover */
+.menu a:hover::after {
+    width: 100%;
+}
+
+        h1 {
+            animation: aparecer 1.5s ease forwards;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+        }
+.card {
+    background: linear-gradient(135deg, rgb(36,4,177), #ff04ff,#b700ff); /* degradê moderno */
+    border-radius: 15px;       /* cantos arredondados */
+    padding: 20px;             /* espaço interno */
+    margin: 20px 0;            /* espaço entre os cards */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card:hover {
+    transform: translateY(-10px);      /* sobe ao passar o mouse */
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2); /* sombra mais forte */
+}
+.card02 {
+    background: linear-gradient(135deg, rgb(36,4,177), #ff04ff,#b700ff); /* degradê moderno */
+    border-radius: 15px;       /* cantos arredondados */
+    padding: 20px;             /* espaço interno */
+    margin: 20px 0;            /* espaço entre os cards */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card02:hover {
+    transform: translateY(-10px);      /* sobe ao passar o mouse */
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2); /* sombra mais forte */
+}
+.card03 {
+    background: linear-gradient(135deg, rgb(36,4,177), #ff04ff,#b700ff); /* degradê moderno */
+    border-radius: 15px;       /* cantos arredondados */
+    padding: 20px;             /* espaço interno */
+    margin: 20px 0;            /* espaço entre os cards */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card03:hover {
+    transform: translateY(-10px);      /* sobe ao passar o mouse */
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2); /* sombra mais forte */
+}
+.card04 {
+    background: linear-gradient(135deg, rgb(0, 219, 146)); /* degradê moderno */
+    border-radius: 15px;       /* cantos arredondados */
+    padding: 20px;             /* espaço interno */
+    margin: 20px 0;            /* espaço entre os cards */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card04:hover {
+    transform: translateY(-10px);      /* sobe ao passar o mouse */
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2); /* sombra mais forte */
+}
+.card05 {
+    background: linear-gradient(135deg, rgb(39, 194, 255)); /* degradê moderno */
+    border-radius: 15px;       /* cantos arredondados */
+    padding: 20px;             /* espaço interno */
+    margin: 20px 0;            /* espaço entre os cards */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card05:hover {
+    transform: translateY(-10px);      /* sobe ao passar o mouse */
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2); /* sombra mais forte */
+}
+.card06 {
+    background: linear-gradient(135deg, rgb(255, 15, 163)); /* degradê moderno */
+    border-radius: 15px;       /* cantos arredondados */
+    padding: 20px;             /* espaço interno */
+    margin: 20px 0;            /* espaço entre os cards */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card06:hover {
+    transform: translateY(-10px);      /* sobe ao passar o mouse */
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2); /* sombra mais forte */
+}
+.card07 {
+    background: linear-gradient(135deg, rgb(111, 0, 255)); /* degradê moderno */
+    border-radius: 15px;       /* cantos arredondados */
+    padding: 20px;             /* espaço interno */
+    margin: 20px 0;            /* espaço entre os cards */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card07:hover {
+    transform: translateY(-10px);      /* sobe ao passar o mouse */
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2); /* sombra mais forte */
+}
+.card08 {
+    background: linear-gradient(135deg, rgb(187, 18, 18)); /* degradê moderno */
+    border-radius: 15px;       /* cantos arredondados */
+    padding: 20px;             /* espaço interno */
+    margin: 20px 0;            /* espaço entre os cards */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card08:hover {
+    transform: translateY(-10px);      /* sobe ao passar o mouse */
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2); /* sombra mais forte */
+}
+.card09 {
+    background: linear-gradient(135deg, rgb(250, 246, 4)); /* degradê moderno */
+    border-radius: 15px;       /* cantos arredondados */
+    padding: 20px;             /* espaço interno */
+    margin: 20px 0;            /* espaço entre os cards */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card09:hover {
+    transform: translateY(-10px);      /* sobe ao passar o mouse */
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2); /* sombra mais forte */
+}
+</style>
+</style>
+
+<style>
+body{background-image: url(https://i.pinimg.com/736x/b6/35/90/b63590f84481919eab537f30ffa41540.jpg);
+}
+html { scroll-behavior: smooth; }
+</style>
+<body>
+    <!--MENU-->
+    <nav class="menu">
+    <div class="menu-container">
+        <div class="logo">Jogos do Anfitrião</div>
+        <ul>
+            <li><a href="JogosdoAnfitrião.html">Início</a></li>
+            <li><a href="JogosdoAnfitrião.html">Jogo</a></li>
+            <li><a href="JogosdoAnfitrião.html">Regras</a></li>
+            <li><a href="JogosdoAnfitrião.html">Roleta Caótica</a></li>
+            <li><a href="#Equipes do Jogo.html">Equipe</a></li>
+        </ul>
+    </div>
+    </nav> 
+    <br> <br> <br> <br> 
+    <hr> <div style="display: flex; justify-content: center;" class="card">
+    <img src="https://i.pinimg.com/736x/18/92/10/1892102b18d7234f5107edfa65fc0762.jpg" width="250" height="300"> <img src="https://pbs.twimg.com/media/FBgRTHdWQAcJg78.jpg" width="250" height="300"> <img src="https://i.pinimg.com/736x/72/ab/dc/72abdc79ce6468d397935f301f1c6770.jpg" width="250" height="300"><img src="https://static.wikia.nocookie.net/bd2d986d-b689-466a-a847-d993222cea9c" width="250" height="300"> <img src="https://pbs.twimg.com/media/FBlNURkXoAQDucw.jpg" width="250" height="300"> <img src="https://i.pinimg.com/736x/fe/f5/d7/fef5d707f65e3b14ecaf750e6b241f41.jpg" width="250" height="300"> <img src="https://i.pinimg.com/736x/43/d1/f5/43d1f5085e9f5ef1078b81624fcb7b9d.jpg" width="250" height="300">
+    </div>
+    <hr> <h1 style="color: white; background: linear-gradient(rgb(36,4,177), #ff04ff,#b700ff); text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: xx-large; color: #ffc400; text-shadow: 0 0 10px #ff3c00, 0 0 20px #ff3c00, 0 0 40px #ff3c00, 0 0 80px #ff3c00;">
+        &#127917; Ordo Calamitas &#127917;
+    </h1> <hr>
+    <div style="display: flex; justify-content: center;" class="card02">
+    <img src="Miniatura_Amalia_em_Calamidade.webp" width="300" height="500"> 
+    <img src="Miniatura_Celestine_em_Calamidade.webp" width="300" height="500"> 
+    <img src="Miniatura_Faustus_em_Calamidade.webp" width="300" height="500"> 
+    <img src="Miniatura_Gaius_em_Calamidade.webp" width="300" height="500"> 
+    <img src="Miniatura_Marius_em_Calamidade.webp" width="300" height="500"> 
+    <img src="Miniatura_Remus_em_Calamidade.webp" width="300" height="500">
+    </div> <hr>
+    <div class="card03">
+    <div class="card04"><h1 style="color: white;">Amalia</h1> <h1 style="color: #000;">Tiro Certeiro:</h1> <h2 style="color: gray;"> Atira com seu arco e flecha e tira 2 de existência do adversário.</h2> <h2 style="color: #ff1100;">Arma = Arco</h2><br> </div>
+    <div class="card05"><h1 style="color: white;">Celestine</h1> <h1 style="color: #000;">Traição:</h1> <h2 style="color: gray;"> Escolhe uma pessoa pra ser seu aliado e a mesma a partir de agora não pode atacar a Celestine, mas ela pode. (OBS: Se os dois ficarem por último , Celestine vence a partida.</h2> <h2 style="color: #ff1100;">Arma = Machados</h2><br> <br></div>
+    <div class="card06"><h1 style="color: white;">Faustus</h1> <h1 style="color: #000;">General:</h1> <h2 style="color: gray;"> Pode ordenar não ser escolhido pelo adversário e o comandar para atacar outra pessoa, que perde 1 de existência em seu lugar. </h2> <h2 style="color: #ff1100;">Arma = Espada</h2><br> <br> </div>
+    <div class="card07"><h1 style="color: white;">Gaius</h1> <h1 style="color: #000;">Idade Avançada:</h1> <h2 style="color: gray;"> Pela idade avançada, o Gaius necessita de descanso para recuperar as energias e por causa disso o mesmo fica imune na rodada que usar o seu descanso. </h2> <h2 style="color: #ff1100;">Arma = Maça</h2><br> <br></div>
+    <div class="card08"><h1 style="color: white;">Marius</h1> <h1 style="color: #000;">Tanque:</h1> <h2 style="color: gray;"> Por ser extremamente forte, Marius possui resistência a 2 de dano de existência. </h2> <h2 style="color: #ff1100;">Arma = Soqueira</h2><br> <br></div>
+    <div class="card09"><h1 style="color: white;">Remus</h1> <h1 style="color: #000;">Cativante:</h1> <h2 style="color: gray;"> Pode decidir não ser escolhido pelo adversário ao usar sua beleza cativante, caso seja escolhido. </h2> <h2 style="color: #ff1100;">Arma = Garras</h2><br> </div>
+    </div> 
+    <hr>
+</body>
+</html>
